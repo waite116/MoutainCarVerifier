@@ -151,7 +151,6 @@ clock := 0</assignment>
       <guard>clock = 0 &amp;
 x1 &lt;= min_position</guard>
       <assignment>_f1 := min_position &amp;
-_f2 := 0 &amp;
 x1 := min_position &amp;
 x2 := 0 &amp;
 temp := 0 &amp;
