@@ -253,7 +253,7 @@ _f71 := 0.5 * _f71 + 0.5 &amp;
 _f72 := 0.5 * _f72 + 0.5 &amp;
 _f73 := 0.5 * _f73 + 0.5 &amp;
 _f74 := 0.5 * _f74 + 0.5 &amp;
-_f75 := 0.5 * _f75 + 0.5 &amp;</assignment>
+_f75 := 0.5 * _f75 + 0.5</assignment>
       <labelposition x="0.0" y="0.0" width="158.0" height="112.0" />
     </transition>
     <transition source="6" target="1">
