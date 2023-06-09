@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<sspaceex xmlns="http://www-verimag.imag.fr/xml-namespaces/sspaceex" version="0.2" math="SpaceEx">
+  <component id="plant">
+    <param name="x1" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="x2" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="temp" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="clock" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f1" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f2" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f3" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f4" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f5" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f6" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f7" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f8" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f9" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f10" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f11" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f12" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f13" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f14" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f15" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f16" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f17" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f18" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f19" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f20" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f21" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f22" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f23" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f24" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f25" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f26" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f27" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f28" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f29" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f30" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f31" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f32" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="reward" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="k" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="max_speed" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="min_speed" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="power" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="goal_position" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="min_position" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <location id="1" name="_reset_mode1" x="255.0" y="123.0" width="208.0" height="140.0">
+      <invariant>clock &lt;= 1</invariant>
+      <flow>x1' == 0 &amp;
+x2' == 0 &amp;
+temp' == _f1 * power - 0.0025 * cos(3 * x1) &amp;
+reward' == 0 &amp;
+
+clock' == 1</flow>
+    </location>
+    <location id="2" name="mode2" x="748.0" y="119.0" width="160.0" height="152.0">
+      <invariant>clock &lt;= 0</invariant>
+      <flow>x1' == 0 &amp;
+x2' == 0 &amp;
+temp' == 0 &amp;
+reward' == 0 &amp;
+clock' == 1</flow>
+    </location>
+    <location id="3" name="mode3" x="746.0" y="536.0" width="170.0" height="130.0">
+      <invariant>clock &lt;= 0</invariant>
+      <flow>x1' == 0 &amp;
+x2' == 0 &amp;
+temp' == 0 &amp;
+reward' == 0 &amp;
+clock' == 1</flow>
+    </location>
+    <location id="4" name="DNN1" x="507.0" y="548.0" width="54.0" height="50.0">
+      <note>generator (1-&gt;75)</note>
+    </location>
+    <location id="5" name="DNN2" x="295.0" y="665.0" width="50.0" height="50.0">
+      <note>Regressor (75-&gt;1)</note>
+    </location>
+    <location id="6" name="DNN3" x="98.0" y="521.0" width="52.0" height="52.0">
+      <note>Controller (2-&gt;1)</note>
+    </location>
+    <transition source="1" target="2">
+      <guard>clock = 1 &amp;
+x2 + temp &lt;= max_speed &amp;
+x2 + temp &gt;= min_speed</guard>
+      <assignment>x1 := x1 + x2 + temp &amp; 
+x2 := x2 + temp &amp;
+temp := temp &amp;
+clock := 0 &amp;
+reward := reward</assignment>
+      <labelposition x="-92.0" y="-29.0" width="176.0" height="76.0" />
+    </transition>
+    <transition source="2" target="3">
+      <guard>clock = 0 &amp;
+x1 &gt;= goal_position</guard>
+      <assignment>reward := reward + 100</assignment>
+      <labelposition x="-71.0" y="-40.0" width="144.0" height="86.0" />
+    </transition>
+    <transition source="2" target="4">
+      <guard>clock = 0 &amp;
+x1 &gt;= min_position &amp;
+x1 &lt;= goal_position</guard>
+      <assignment>_f1 := x1 &amp;
+clock := 0</assignment>
+      <labelposition x="-80.0" y="-63.0" width="156.0" height="124.0" />
+      <middlepoint x="582.5" y="419.0" />
+    </transition>
+    <transition source="2" target="4">
+      <guard>clock = 0 &amp;
+x1 &lt;= min_position</guard>
+      <assignment>_f1 := min_position &amp;
+x1 := min_position &amp;
+x2 := 0 &amp;
+temp := 0 &amp;
+clock := 0</assignment>
+      <labelposition x="-101.0" y="-45.0" width="132.0" height="170.0" />
+      <middlepoint x="447.0" y="334.5" />
+    </transition>
+    <transition source="1" target="2">
+      <guard>clock = 1 &amp;
+x2 + temp &gt;= max_speed</guard>
+      <assignment>x1 := x1 + max_speed &amp; 
+x2 := max_speed &amp;
+clock := 0</assignment>
+      <labelposition x="-134.0" y="-59.0" width="242.0" height="104.0" />
+      <middlepoint x="495.5" y="64.0" />
+    </transition>
+    <transition source="1" target="2">
+      <guard>clock = 1 &amp;
+x2 + temp &lt;= min_speed</guard>
+      <assignment>x1 := x1 + min_speed &amp; 
+x2 := min_speed &amp;
+clock := 0</assignment>
+      <labelposition x="-79.0" y="-28.0" width="160.0" height="104.0" />
+      <middlepoint x="492.5" y="196.0" />
+    </transition>
+    <transition source="4" target="5">
+      <guard>clock = 0</guard>
+      <assignment>_f1 := 0.5 * _f1 + 0.5 &amp; 
+_f2 := 0.5 * _f2 + 0.5 &amp;
+_f3 := 0.5 * _f3 + 0.5 &amp;
+_f4 := 0.5 * _f4 + 0.5 &amp;
+_f5 := 0.5 * _f5 + 0.5 &amp;
+_f6 := 0.5 * _f6 + 0.5 &amp;
+_f7 := 0.5 * _f7 + 0.5 &amp;
+_f8 := 0.5 * _f8 + 0.5 &amp;
+_f9 := 0.5 * _f9 + 0.5 &amp;
+_f10 := 0.5 * _f10 + 0.5 &amp;
+_f11 := 0.5 * _f11 + 0.5 &amp;
+_f12 := 0.5 * _f12 + 0.5 &amp;
+_f13 := 0.5 * _f13 + 0.5 &amp;
+_f14 := 0.5 * _f14 + 0.5 &amp;
+_f15 := 0.5 * _f15 + 0.5 &amp;
+_f16 := 0.5 * _f16 + 0.5 &amp;
+_f17 := 0.5 * _f17 + 0.5 &amp;
+_f18 := 0.5 * _f18 + 0.5 &amp;
+_f19 := 0.5 * _f19 + 0.5 &amp;
+_f20 := 0.5 * _f20 + 0.5 &amp;
+_f21 := 0.5 * _f21 + 0.5 &amp;
+_f22 := 0.5 * _f22 + 0.5 &amp;
+_f23 := 0.5 * _f23 + 0.5 &amp;
+_f24 := 0.5 * _f24 + 0.5 &amp;
+_f25 := 0.5 * _f25 + 0.5 &amp;
+_f26 := 0.5 * _f26 + 0.5 &amp;
+_f27 := 0.5 * _f27 + 0.5 &amp;
+_f28 := 0.5 * _f28 + 0.5 &amp;
+_f29 := 0.5 * _f29 + 0.5 &amp;
+_f30 := 0.5 * _f30 + 0.5 &amp;
+_f31 := 0.5 * _f31 + 0.5 &amp;
+_f32 := 0.5 * _f32 + 0.5</assignment>
+      <labelposition x="0.0" y="0.0" width="82.0" height="74.0" />
+    </transition>
+    <transition source="6" target="1">
+      <guard>clock = 0</guard>
+      <assignment>temp := 0 &amp;
+reward := reward - 0.1 * _f1 * _f1 &amp;
+clock := 0 &amp;
+k := k + 1</assignment>
+      <labelposition x="-59.0" y="-9.0" width="122.0" height="92.0" />
+    </transition>
+    <transition source="5" target="6">
+      <guard>clock = 0</guard>
+      <assignment>_f1 := _f1 - 0.4 &amp;
+_f2 := x2 &amp;
+clock := 0</assignment>
+      <labelposition x="-45.0" y="-7.0" width="96.0" height="92.0" />
+    </transition>
+  </component>
+  <component id="constants">
+    <bind component="plant" as="plant_1" x="258.0" y="103.0" width="106.0" height="78.0">
+      <map key="max_speed">0.07</map>
+      <map key="min_speed">-0.07</map>
+      <map key="power">0.0015</map>
+      <map key="goal_position">0.45</map>
+      <map key="min_position">-1.2</map>
+    </bind>
+  </component>
+</sspaceex>
+
