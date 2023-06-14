@@ -667,14 +667,14 @@ reward := reward</assignment>
       <labelposition x="-92.0" y="-29.0" width="176.0" height="76.0" />
     </transition>
     <transition source="2" target="3">
-      <guard>k &lt; 150 &amp;
+      <guard>k &lt;= 149 &amp;
 clock = 0 &amp;
 x1 &gt;= goal_position</guard>
       <assignment>reward := reward + 100</assignment>
       <labelposition x="-71.0" y="-40.0" width="148.0" height="118.0" />
     </transition>
     <transition source="2" target="4">
-      <guard>k &lt; 150 &amp;
+      <guard>k &lt;= 149 &amp;
 clock = 0 &amp;
 x1 &gt;= min_position &amp;
 x1 &lt;= goal_position</guard>
@@ -684,7 +684,7 @@ clock := 0</assignment>
       <middlepoint x="582.5" y="419.0" />
     </transition>
     <transition source="2" target="4">
-      <guard>k &lt; 150 &amp;
+      <guard>k &lt;= 149 &amp;
 clock = 0 &amp;
 x1 &lt;= min_position</guard>
       <assignment>_f1 := min_position &amp;
