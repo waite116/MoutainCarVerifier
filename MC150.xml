@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<sspaceex xmlns="http://www-verimag.imag.fr/xml-namespaces/sspaceex" version="0.2" math="SpaceEx">
+  <component id="plant">
+    <param name="x1" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="x2" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="temp" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="clock" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f1" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f2" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f3" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f4" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f5" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f6" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f7" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f8" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f9" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f10" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f11" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f12" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f13" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f14" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f15" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f16" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f17" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f18" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f19" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f20" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f21" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f22" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f23" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f24" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f25" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f26" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f27" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f28" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f29" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f30" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f31" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f32" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f33" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f34" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f35" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f36" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f37" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f38" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f39" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f40" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f41" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f42" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f43" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f44" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f45" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f46" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f47" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f48" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f49" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f50" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f51" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f52" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f53" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f54" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f55" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f56" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f57" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f58" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f59" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f60" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f61" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f62" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f63" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f64" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f65" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f66" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f67" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f68" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f69" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f70" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f71" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f72" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f73" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f74" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f75" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+	<param name="_f76" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f77" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f78" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f79" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f80" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f81" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f82" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f83" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f84" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f85" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f86" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f87" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f88" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f89" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f90" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f91" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f92" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f93" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f94" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f95" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f96" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f97" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f98" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f99" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f100" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f101" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f102" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f103" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f104" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f105" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f106" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f107" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f108" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f109" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f110" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f111" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f112" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f113" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f114" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f115" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f116" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f117" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f118" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f119" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f120" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f121" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f122" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f123" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f124" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f125" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f126" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f127" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f128" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f129" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f130" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f131" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f132" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f133" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f134" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f135" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f136" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f137" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f138" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f139" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f140" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f141" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f142" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f143" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f144" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f145" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f146" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f147" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f148" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f149" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="_f150" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="reward" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="k" type="real" local="true" d1="1" d2="1" dynamics="any" controlled="false" />
+    <param name="max_speed" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="min_speed" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="power" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="goal_position" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="min_position" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <location id="1" name="_reset_mode1" x="255.0" y="123.0" width="208.0" height="140.0">
+      <invariant>clock &lt;= 1</invariant>
+      <flow>x1' == 0 &amp;
+x2' == 0 &amp;
+temp' == _f1 * power - 0.0025 * cos(3 * x1) &amp;
+reward' == 0 &amp;
+
+clock' == 1</flow>
+    </location>
+    <location id="2" name="mode2" x="731.0" y="127.0" width="160.0" height="152.0">
+      <invariant>clock &lt;= 0</invariant>
+      <flow>x1' == 0 &amp;
+x2' == 0 &amp;
+temp' == 0 &amp;
+reward' == 0 &amp;
+clock' == 1</flow>
+    </location>
+    <location id="3" name="mode3" x="746.0" y="536.0" width="170.0" height="130.0">
+      <invariant>clock &lt;= 0</invariant>
+      <flow>x1' == 0 &amp;
+x2' == 0 &amp;
+temp' == 0 &amp;
+reward' == 0 &amp;
+clock' == 1</flow>
+    </location>
+    <location id="4" name="DNN1" x="507.0" y="548.0" width="54.0" height="50.0">
+      <note>generator (1-&gt;75)</note>
+    </location>
+    <location id="5" name="DNN2" x="295.0" y="665.0" width="50.0" height="50.0">
+      <note>Regressor (75-&gt;1)</note>
+    </location>
+    <location id="6" name="DNN3" x="98.0" y="521.0" width="52.0" height="52.0">
+      <note>Controller (2-&gt;1)</note>
+    </location>
+    <location id="7" name="mode4" x="924.0" y="450.0" width="120.0" height="134.0">
+      <invariant>clock &lt;= 0</invariant>
+      <flow>x1' == 0 &amp;
+x2' == 0 &amp;
+temp' == 0 &amp;
+reward' == 0 &amp;
+clock' == 1</flow>
+    </location>
+    <transition source="1" target="2">
+      <guard>clock = 1 &amp;
+x2 + temp &lt;= max_speed &amp;
+x2 + temp &gt;= min_speed</guard>
+      <assignment>x1 := x1 + x2 + temp &amp; 
+x2 := x2 + temp &amp;
+temp := temp &amp;
+clock := 0 &amp;
+reward := reward</assignment>
+      <labelposition x="-92.0" y="-29.0" width="176.0" height="76.0" />
+    </transition>
+    <transition source="2" target="3">
+      <guard>k &lt; 150 &amp;
+clock = 0 &amp;
+x1 &gt;= goal_position</guard>
+      <assignment>reward := reward + 100</assignment>
+      <labelposition x="-71.0" y="-40.0" width="148.0" height="118.0" />
+    </transition>
+    <transition source="2" target="4">
+      <guard>k &lt; 150 &amp;
+clock = 0 &amp;
+x1 &gt;= min_position &amp;
+x1 &lt;= goal_position</guard>
+      <assignment>_f1 := x1 &amp;
+clock := 0</assignment>
+      <labelposition x="-80.0" y="-63.0" width="156.0" height="124.0" />
+      <middlepoint x="582.5" y="419.0" />
+    </transition>
+    <transition source="2" target="4">
+      <guard>k &lt; 150 &amp;
+clock = 0 &amp;
+x1 &lt;= min_position</guard>
+      <assignment>_f1 := min_position &amp;
+x1 := min_position &amp;
+x2 := 0 &amp;
+temp := 0 &amp;
+clock := 0</assignment>
+      <labelposition x="-101.0" y="-45.0" width="132.0" height="170.0" />
+      <middlepoint x="447.0" y="334.5" />
+    </transition>
+    <transition source="1" target="2">
+      <guard>clock = 1 &amp;
+x2 + temp &gt;= max_speed</guard>
+      <assignment>x1 := x1 + max_speed &amp; 
+x2 := max_speed &amp;
+clock := 0</assignment>
+      <labelposition x="-134.0" y="-59.0" width="242.0" height="104.0" />
+      <middlepoint x="495.5" y="64.0" />
+    </transition>
+    <transition source="1" target="2">
+      <guard>clock = 1 &amp;
+x2 + temp &lt;= min_speed</guard>
+      <assignment>x1 := x1 + min_speed &amp; 
+x2 := min_speed &amp;
+clock := 0</assignment>
+      <labelposition x="-79.0" y="-28.0" width="160.0" height="104.0" />
+      <middlepoint x="492.5" y="196.0" />
+    </transition>
+    <transition source="4" target="5">
+      <guard>clock = 0</guard>
+      <assignment>_f1 := 0.5 * _f1 + 0.5 &amp; 
+_f2 := 0.5 * _f2 + 0.5 &amp;
+_f3 := 0.5 * _f3 + 0.5 &amp;
+_f4 := 0.5 * _f4 + 0.5 &amp;
+_f5 := 0.5 * _f5 + 0.5 &amp;
+_f6 := 0.5 * _f6 + 0.5 &amp;
+_f7 := 0.5 * _f7 + 0.5 &amp;
+_f8 := 0.5 * _f8 + 0.5 &amp;
+_f9 := 0.5 * _f9 + 0.5 &amp;
+_f10 := 0.5 * _f10 + 0.5 &amp;
+_f11 := 0.5 * _f11 + 0.5 &amp;
+_f12 := 0.5 * _f12 + 0.5 &amp;
+_f13 := 0.5 * _f13 + 0.5 &amp;
+_f14 := 0.5 * _f14 + 0.5 &amp;
+_f15 := 0.5 * _f15 + 0.5 &amp;
+_f16 := 0.5 * _f16 + 0.5 &amp;
+_f17 := 0.5 * _f17 + 0.5 &amp;
+_f18 := 0.5 * _f18 + 0.5 &amp;
+_f19 := 0.5 * _f19 + 0.5 &amp;
+_f20 := 0.5 * _f20 + 0.5 &amp;
+_f21 := 0.5 * _f21 + 0.5 &amp;
+_f22 := 0.5 * _f22 + 0.5 &amp;
+_f23 := 0.5 * _f23 + 0.5 &amp;
+_f24 := 0.5 * _f24 + 0.5 &amp;
+_f25 := 0.5 * _f25 + 0.5 &amp;
+_f26 := 0.5 * _f26 + 0.5 &amp;
+_f27 := 0.5 * _f27 + 0.5 &amp;
+_f28 := 0.5 * _f28 + 0.5 &amp;
+_f29 := 0.5 * _f29 + 0.5 &amp;
+_f30 := 0.5 * _f30 + 0.5 &amp;
+_f31 := 0.5 * _f31 + 0.5 &amp;
+_f32 := 0.5 * _f32 + 0.5 &amp;
+_f33 := 0.5 * _f33 + 0.5 &amp;
+_f34 := 0.5 * _f34 + 0.5 &amp;
+_f35 := 0.5 * _f35 + 0.5 &amp;
+_f36 := 0.5 * _f36 + 0.5 &amp;
+_f37 := 0.5 * _f37 + 0.5 &amp;
+_f38 := 0.5 * _f38 + 0.5 &amp;
+_f39 := 0.5 * _f39 + 0.5 &amp;
+_f40 := 0.5 * _f40 + 0.5 &amp;
+_f41 := 0.5 * _f41 + 0.5 &amp;
+_f42 := 0.5 * _f42 + 0.5 &amp;
+_f43 := 0.5 * _f43 + 0.5 &amp;
+_f44 := 0.5 * _f44 + 0.5 &amp;
+_f45 := 0.5 * _f45 + 0.5 &amp;
+_f46 := 0.5 * _f46 + 0.5 &amp;
+_f47 := 0.5 * _f47 + 0.5 &amp;
+_f48 := 0.5 * _f48 + 0.5 &amp;
+_f49 := 0.5 * _f49 + 0.5 &amp;
+_f50 := 0.5 * _f50 + 0.5 &amp;
+_f51 := 0.5 * _f51 + 0.5 &amp;
+_f52 := 0.5 * _f52 + 0.5 &amp;
+_f53 := 0.5 * _f53 + 0.5 &amp;
+_f54 := 0.5 * _f54 + 0.5 &amp;
+_f55 := 0.5 * _f55 + 0.5 &amp;
+_f56 := 0.5 * _f56 + 0.5 &amp;
+_f57 := 0.5 * _f57 + 0.5 &amp;
+_f58 := 0.5 * _f58 + 0.5 &amp;
+_f59 := 0.5 * _f59 + 0.5 &amp;
+_f60 := 0.5 * _f60 + 0.5 &amp;
+_f61 := 0.5 * _f61 + 0.5 &amp;
+_f62 := 0.5 * _f62 + 0.5 &amp;
+_f63 := 0.5 * _f63 + 0.5 &amp;
+_f64 := 0.5 * _f64 + 0.5 &amp;
+_f65 := 0.5 * _f65 + 0.5 &amp;
+_f66 := 0.5 * _f66 + 0.5 &amp;
+_f67 := 0.5 * _f67 + 0.5 &amp;
+_f68 := 0.5 * _f68 + 0.5 &amp;
+_f69 := 0.5 * _f69 + 0.5 &amp;
+_f70 := 0.5 * _f70 + 0.5 &amp;
+_f71 := 0.5 * _f71 + 0.5 &amp;
+_f72 := 0.5 * _f72 + 0.5 &amp;
+_f73 := 0.5 * _f73 + 0.5 &amp;
+_f74 := 0.5 * _f74 + 0.5 &amp;
+_f75 := 0.5 * _f75 + 0.5 &amp;
+_f76 := 0.5 * _f76 + 0.5 &amp;
+_f77 := 0.5 * _f77 + 0.5 &amp;
+_f78 := 0.5 * _f78 + 0.5 &amp;
+_f79 := 0.5 * _f79 + 0.5 &amp;
+_f80 := 0.5 * _f80 + 0.5 &amp;
+_f81 := 0.5 * _f81 + 0.5 &amp;
+_f82 := 0.5 * _f82 + 0.5 &amp;
+_f83 := 0.5 * _f83 + 0.5 &amp;
+_f84 := 0.5 * _f84 + 0.5 &amp;
+_f85 := 0.5 * _f85 + 0.5 &amp;
+_f86 := 0.5 * _f86 + 0.5 &amp;
+_f87 := 0.5 * _f87 + 0.5 &amp;
+_f88 := 0.5 * _f88 + 0.5 &amp;
+_f89 := 0.5 * _f89 + 0.5 &amp;
+_f90 := 0.5 * _f90 + 0.5 &amp;
+_f91 := 0.5 * _f91 + 0.5 &amp;
+_f92 := 0.5 * _f92 + 0.5 &amp;
+_f93 := 0.5 * _f93 + 0.5 &amp;
+_f94 := 0.5 * _f94 + 0.5 &amp;
+_f95 := 0.5 * _f95 + 0.5 &amp;
+_f96 := 0.5 * _f96 + 0.5 &amp;
+_f97 := 0.5 * _f97 + 0.5 &amp;
+_f98 := 0.5 * _f98 + 0.5 &amp;
+_f99 := 0.5 * _f99 + 0.5 &amp;
+_f100 := 0.5 * _f100 + 0.5 &amp;
+_f101 := 0.5 * _f101 + 0.5 &amp;
+_f102 := 0.5 * _f102 + 0.5 &amp;
+_f103 := 0.5 * _f103 + 0.5 &amp;
+_f104 := 0.5 * _f104 + 0.5 &amp;
+_f105 := 0.5 * _f105 + 0.5 &amp;
+_f106 := 0.5 * _f106 + 0.5 &amp;
+_f107 := 0.5 * _f107 + 0.5 &amp;
+_f108 := 0.5 * _f108 + 0.5 &amp;
+_f109 := 0.5 * _f109 + 0.5 &amp;
+_f110 := 0.5 * _f110 + 0.5 &amp;
+_f111 := 0.5 * _f111 + 0.5 &amp;
+_f112 := 0.5 * _f112 + 0.5 &amp;
+_f113 := 0.5 * _f113 + 0.5 &amp;
+_f114 := 0.5 * _f114 + 0.5 &amp;
+_f115 := 0.5 * _f115 + 0.5 &amp;
+_f116 := 0.5 * _f116 + 0.5 &amp;
+_f117 := 0.5 * _f117 + 0.5 &amp;
+_f118 := 0.5 * _f118 + 0.5 &amp;
+_f119 := 0.5 * _f119 + 0.5 &amp;
+_f120 := 0.5 * _f120 + 0.5 &amp;
+_f121 := 0.5 * _f121 + 0.5 &amp;
+_f122 := 0.5 * _f122 + 0.5 &amp;
+_f123 := 0.5 * _f123 + 0.5 &amp;
+_f124 := 0.5 * _f124 + 0.5 &amp;
+_f125 := 0.5 * _f125 + 0.5 &amp;
+_f126 := 0.5 * _f126 + 0.5 &amp;
+_f127 := 0.5 * _f127 + 0.5 &amp;
+_f128 := 0.5 * _f128 + 0.5 &amp;
+_f129 := 0.5 * _f129 + 0.5 &amp;
+_f130 := 0.5 * _f130 + 0.5 &amp;
+_f131 := 0.5 * _f131 + 0.5 &amp;
+_f132 := 0.5 * _f132 + 0.5 &amp;
+_f133 := 0.5 * _f133 + 0.5 &amp;
+_f134 := 0.5 * _f134 + 0.5 &amp;
+_f135 := 0.5 * _f135 + 0.5 &amp;
+_f136 := 0.5 * _f136 + 0.5 &amp;
+_f137 := 0.5 * _f137 + 0.5 &amp;
+_f138 := 0.5 * _f138 + 0.5 &amp;
+_f139 := 0.5 * _f139 + 0.5 &amp;
+_f140 := 0.5 * _f140 + 0.5 &amp;
+_f141 := 0.5 * _f141 + 0.5 &amp;
+_f142 := 0.5 * _f142 + 0.5 &amp;
+_f143 := 0.5 * _f143 + 0.5 &amp;
+_f144 := 0.5 * _f144 + 0.5 &amp;
+_f145 := 0.5 * _f145 + 0.5 &amp;
+_f146 := 0.5 * _f146 + 0.5 &amp;
+_f147 := 0.5 * _f147 + 0.5 &amp;
+_f148 := 0.5 * _f148 + 0.5 &amp;
+_f149 := 0.5 * _f149 + 0.5 &amp;
+_f150 := 0.5 * _f150 + 0.5</assignment>
+      <labelposition x="0.0" y="0.0" width="82.0" height="74.0" />
+    </transition>
+    <transition source="6" target="1">
+      <guard>clock = 0</guard>
+      <assignment>temp := 0 &amp;
+reward := reward - 0.1 * _f1 * _f1 &amp;
+clock := 0 &amp;
+k := k + 1</assignment>
+      <labelposition x="-59.0" y="-9.0" width="122.0" height="92.0" />
+    </transition>
+    <transition source="5" target="6">
+      <guard>clock = 0</guard>
+      <assignment>_f1 := _f1 - 0.4 &amp;
+_f2 := x2 &amp;
+clock := 0</assignment>
+      <labelposition x="-45.0" y="-7.0" width="96.0" height="92.0" />
+    </transition>
+    <transition source="2" target="7">
+      <guard>k &gt;= 150 &amp; 
+clock =0 &amp;
+x1 &gt;= min_position &amp;
+x1 &lt;= goal_position</guard>
+      <labelposition x="3.0" y="-73.0" width="140.0" height="130.0" />
+    </transition>
+  </component>
+  <component id="constants">
+    <bind component="plant" as="plant_1" x="258.0" y="103.0" width="106.0" height="78.0">
+      <map key="max_speed">0.07</map>
+      <map key="min_speed">-0.07</map>
+      <map key="power">0.0015</map>
+      <map key="goal_position">0.45</map>
+      <map key="min_position">-1.2</map>
+    </bind>
+  </component>
+</sspaceex>
+
