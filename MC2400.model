@@ -5,7 +5,7 @@ hybrid reachability
 	setting
 	{
 		adaptive steps {min 1e-6, max 0.1}
-		time 200
+		time 500
 		remainder estimation 1e-1
 		identity precondition 
 		gnuplot octagon clock, _f1
@@ -13,7 +13,7 @@ hybrid reachability
 		cutoff 1e-18
 		precision 100
 		output autosig
-		max jumps 1000
+		max jumps 5000
 		print off
 	}
 
