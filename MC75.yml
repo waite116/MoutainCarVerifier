@@ -1,5 +1,5 @@
 time: 200
-max jumps: 100
+max jumps: 1000
 gnuplot: octagon clock, _f1
 
 init: 

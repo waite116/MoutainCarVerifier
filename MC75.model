@@ -5,7 +5,7 @@ hybrid reachability
 	setting
 	{
 		adaptive steps {min 1e-6, max 0.1}
-		time 115
+		time 200
 		remainder estimation 1e-1
 		identity precondition 
 		gnuplot octagon clock, _f1
@@ -13,8 +13,8 @@ hybrid reachability
 		cutoff 1e-18
 		precision 100
 		output autosig
-		max jumps 100
-		print on
+		max jumps 1000
+		print off
 	}
 
 	modes
@@ -838,6 +838,97 @@ hybrid reachability
 				clock <= 0.0
 			}
 		}
+		mode4
+		{
+			nonpoly ode
+			{
+				_f49' = 0.0
+				_f45' = 0.0
+				_f46' = 0.0
+				_f47' = 0.0
+				_f48' = 0.0
+				_f41' = 0.0
+				_f42' = 0.0
+				_f43' = 0.0
+				_f44' = 0.0
+				_f40' = 0.0
+				_f38' = 0.0
+				_f39' = 0.0
+				_f34' = 0.0
+				_f35' = 0.0
+				_f36' = 0.0
+				_f37' = 0.0
+				_f30' = 0.0
+				_f74' = 0.0
+				_f31' = 0.0
+				_f75' = 0.0
+				_f2' = 0.0
+				_f32' = 0.0
+				clock' = 1.0
+				_f1' = 0.0
+				_f33' = 0.0
+				_f4' = 0.0
+				_f70' = 0.0
+				_f3' = 0.0
+				_f71' = 0.0
+				_f6' = 0.0
+				_f72' = 0.0
+				_f5' = 0.0
+				_f73' = 0.0
+				_f8' = 0.0
+				_f7' = 0.0
+				_f9' = 0.0
+				x1' = 0.0
+				x2' = 0.0
+				_f27' = 0.0
+				_f28' = 0.0
+				_f29' = 0.0
+				_f23' = 0.0
+				_f67' = 0.0
+				_f24' = 0.0
+				_f68' = 0.0
+				_f25' = 0.0
+				_f69' = 0.0
+				_f26' = 0.0
+				_f63' = 0.0
+				_f20' = 0.0
+				_f64' = 0.0
+				_f21' = 0.0
+				_f65' = 0.0
+				_f22' = 0.0
+				_f66' = 0.0
+				_f60' = 0.0
+				_f61' = 0.0
+				_f62' = 0.0
+				reward' = 0.0
+				_f16' = 0.0
+				_f17' = 0.0
+				temp' = 0.0
+				_f18' = 0.0
+				_f19' = 0.0
+				_f12' = 0.0
+				_f56' = 0.0
+				_f13' = 0.0
+				_f57' = 0.0
+				_f14' = 0.0
+				_f58' = 0.0
+				_f15' = 0.0
+				_f59' = 0.0
+				_f52' = 0.0
+				_f53' = 0.0
+				_f10' = 0.0
+				_f54' = 0.0
+				_f11' = 0.0
+				_f55' = 0.0
+				k' = 0.0
+				_f50' = 0.0
+				_f51' = 0.0
+			}
+			inv
+			{
+				clock <= 0.0
+			}
+		}
 	}
 	jumps
 	{
@@ -866,16 +957,20 @@ hybrid reachability
 		reset { x1' := x1 + -0.07 x2' := -0.07 clock' := 0.0 }
 		interval aggregation
 		mode2 -> mode3
-		guard { clock = 0.0 x1 >= 0.45 }
+		guard { k <= 149.0 clock = 0.0 x1 >= 0.45 }
 		reset { reward' := reward + 100.0 }
 		interval aggregation
 		mode2 -> _DNN1
-		guard { clock = 0.0 x1 >= -1.2 x1 <= 0.45 }
+		guard { k <= 149.0 clock = 0.0 x1 >= -1.2 x1 <= 0.45 }
 		reset { _f1' := x1 clock' := 0.0 }
 		interval aggregation
 		mode2 -> _DNN1
-		guard { clock = 0.0 x1 <= -1.2 }
+		guard { k <= 149.0 clock = 0.0 x1 <= -1.2 }
 		reset { temp' := 0.0 x1' := -1.2 x2' := 0.0 _f1' := -1.2 clock' := 0.0 }
+		interval aggregation
+		mode2 -> mode4
+		guard { k >= 150.0 clock = 0.0 x1 >= -1.2 x1 <= 0.45 }
+		reset { }
 		interval aggregation
 		DNN1 -> _DNN2
 		guard { clock = 0.0 }
@@ -894,7 +989,7 @@ hybrid reachability
 	{
 		mode2
 		{
-			x1 in [-0.5, -0.48]
+			x1 in [X1_LOWER, X1_UPPER]
 			x2 in [0, 0]
 			reward in [0, 0]
 		}
@@ -903,6 +998,10 @@ hybrid reachability
 unsafe
 {
 	mode3
+	{
+		reward <= 90
+	}
+	mode4
 	{
 		reward <= 90
 	}
