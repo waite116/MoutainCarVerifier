@@ -1,0 +1,23 @@
+time: 200
+max jumps: 2000
+gnuplot: octagon clock, _f1
+
+init: 
+  mode: mode2
+  states:
+    - x1 in [-0.48, -0.47975]
+    - x3 in [.3, 2]
+    - x2 in [0, 0]
+    - reward in [0, 0] 
+
+unsafe:
+  - mode: mode3
+    states:
+    - reward <= 90
+  - mode: mode4
+    states:
+    - reward <= 90
+
+print: 'on'
+plot: false
+dump: false

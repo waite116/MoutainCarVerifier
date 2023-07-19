@@ -1,11 +1,12 @@
 time: 200
-max jumps: 1000
+max jumps: 2000
 gnuplot: octagon clock, _f1
 
 init: 
   mode: mode2
   states:
     - x1 in [X1_LOWER, X1_UPPER]
+    - x3 in [.9, 1]
     - x2 in [0, 0]
     - reward in [0, 0] 
 

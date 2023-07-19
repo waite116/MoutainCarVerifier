@@ -11,7 +11,7 @@ xml_path = 'MCC_600.xml'
 dnn1_yaml = 'networks/Generator2x50_100_Decay1Loss1.113e-06.yml'
 dnn2_yaml = 'networks/Contraster1x50_Decay1Loss57.36.yml'
 dnn3_yaml = 'networks/Image2StateRobuster1x20ImageSize20x30Decay0.001.yml'
-dnn3_yaml = 'networks/ControllerSigmoid16x16.yml'
+dnn4_yaml = 'networks/ControllerSigmoid16x16.yml'
 
 if not os.path.exists(output_path):
         os.mkdir(output_path)

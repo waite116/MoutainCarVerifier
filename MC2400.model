@@ -14,7 +14,7 @@ hybrid reachability
 		precision 100
 		output autosig
 		max jumps 5000
-		print off
+		print on
 	}
 
 	modes

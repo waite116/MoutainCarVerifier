@@ -14,7 +14,7 @@ hybrid reachability
 		precision 100
 		output autosig
 		max jumps 1000
-		print off
+		print on
 	}
 
 	modes
@@ -989,7 +989,7 @@ hybrid reachability
 	{
 		mode2
 		{
-			x1 in [X1_LOWER, X1_UPPER]
+			x1 in [-0.5, -0.48]
 			x2 in [0, 0]
 			reward in [0, 0]
 		}

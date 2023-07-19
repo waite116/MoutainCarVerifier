@@ -13,7 +13,7 @@ hybrid reachability
 		cutoff 1e-18
 		precision 100
 		output autosig
-		max jumps 1000
+		max jumps 2000
 		print off
 	}
 
@@ -6240,6 +6240,7 @@ hybrid reachability
 		mode2
 		{
 			x1 in [X1_LOWER, X1_UPPER]
+			x3 in [.9, 1]
 			x2 in [0, 0]
 			reward in [0, 0]
 		}
