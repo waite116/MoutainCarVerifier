@@ -1,0 +1,15 @@
+
+[1m[31mComputation not completed: 2002 flowpipe(s) computed.
+[0m[1mPlease try smaller step sizes or larger Taylor model orders.
+
+[0m[1mResult of the safety verification on the computed flowpipes: [0m[1m[32mSAFE
+
+[0mTotal time cost:[1m 50472.679147[0m seconds.
+
+total branches: 17
+dnn runtime: 26226.718750
+
+Initial conditions:
+[-0.584875, -0.584750]
+[0.000000, 0.000000]
+[0.300000, 2.000000]

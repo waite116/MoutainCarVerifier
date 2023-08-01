@@ -1,0 +1,6 @@
+Entered a case that is not supported by Verisig (multiple intersected flowpipes). Exiting...
+
+Initial conditions:
+[-0.524000, -0.523750]
+[0.000000, 0.000000]
+[0.300000, 2.000000]

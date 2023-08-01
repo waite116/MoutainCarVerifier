@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-
+import sys
 import os
 import subprocess
 import multiprocessing
-
-def main()
+import numpy as np
+from decimal import *
+from functools import partial
+def main():
     xml_path = 'MCC_600.xml'
     verisig_path = '../verisig'
     flowstar_path = '../flowstar/flowstar'
@@ -19,10 +21,11 @@ def main()
     n_ind = args.index('-n')
     
     start_str = args[start_ind+1]
-    start_val = float(start_str)
-    
+    start_val = Decimal(start_str)
+    print(start_val)
     int_str = args[int_ind+1]
-    int_val = float(int_str)
+    int_val = Decimal(int_str)
+    print(int_val)
     
     n_str = args[n_ind+1]
     n_ints = int(n_str)
@@ -38,11 +41,13 @@ def main()
 
 
     legend = ['X1_LOWER', 'X1_UPPER']
+    
     test_set = []
-    for i in range(num_ints): 
+    for i in range(n_ints): 
         interval = [start_val, start_val+int_val]
         test_set.append(interval)
         start_val = start_val+int_val
+    print(test_set)
     if test_set[-1][1] != end_val:
         print('Error defining intervals, ending does not match expected.')
         return -1
@@ -51,19 +56,20 @@ def main()
         subprocess.run([verisig_path, '-vc=MCC_multi.yml', '-o' ,'-nf', xml_path, dnn1_yaml, dnn2_yaml, dnn3_yaml, dnn4_yaml])
 
         with open('MCC_600.model', 'r') as f:
-            model = f.read()
+            in_model = f.read()
         print("Starting parallel verification")
-        num_parallel = num_ints
+        num_parallel = n_ints
         with multiprocessing.Pool(processes=num_parallel) as pool:
-            pool.map(evaluate_conditions, test_set)
+            pool.map(partial(evaluate_conditions, legend=legend, model=in_model, output_path=output_path, flowstar_path=flowstar_path, dnn1_yaml=dnn1_yaml, dnn2_yaml=dnn2_yaml, dnn3_yaml=dnn3_yaml, dnn4_yaml=dnn4_yaml), test_set)
         return 0
 
 
 
 #===========================================================================================
 # Begin Parallel Function
-#===========================================================================================
-def evaluate_conditions(conditions):
+#==========================================================================================
+
+def evaluate_conditions(conditions, legend, model, output_path, flowstar_path, dnn1_yaml, dnn2_yaml, dnn3_yaml, dnn4_yaml):
     test_model = model
     for i in range(len(legend)):
         test_model = test_model.replace(legend[i], str(conditions[i]))
@@ -75,3 +81,5 @@ def evaluate_conditions(conditions):
 # End Parallel Function
 #===========================================================================================
 
+if __name__ == '__main__':
+    main()

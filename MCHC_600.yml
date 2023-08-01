@@ -5,7 +5,7 @@ gnuplot: octagon clock, _f1
 init: 
   mode: mode2
   states:
-    - x1 in [-0.48, -0.47975]
+    - x1 in [-0.489, -0.47975]
     - x3 in [.3, 2]
     - x2 in [0, 0]
     - reward in [0, 0] 
