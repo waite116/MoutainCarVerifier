@@ -64,6 +64,8 @@ for folder in folders:
                             num_pipes = word_list[2]
                         elif 'UNSAFE' in lines[i+1]: 
                             verify_result = 'UNSAFE'
+                        elif 'UNKNOWN' in lines[i+1]:
+                            verify_result = 'UNKNOWN'
                     elif 'Computation not completed' in line or 'Exiting' in line:
                         verify_result = 'NONE'
                     if 'Total time cost:' in line: 
