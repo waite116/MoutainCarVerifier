@@ -6,8 +6,7 @@ init:
   mode: mode2
   states:
     - x1 in [X1_LOWER, X1_UPPER]
-    - x3 in [.5, 2]
-    - x4 in [0, 0.15]
+    - x3 in [0, .3]
     - x2 in [0, 0]
     - reward in [0, 0] 
 

@@ -5,9 +5,9 @@ gnuplot: octagon clock, _f1
 init: 
   mode: mode2
   states:
-    - x1 in [X1_LOWER, X1_UPPER]
+    - x1 in [-0.400125, -0.4]
     - x3 in [.5, 2]
-    - x4 in [0, 0.15]
+    - x4 in [0, .15]
     - x2 in [0, 0]
     - reward in [0, 0] 
 
@@ -19,6 +19,6 @@ unsafe:
     states:
     - reward <= 90
 
-print: 'off'
+print: 'on'
 plot: false
 dump: false
